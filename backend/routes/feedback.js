@@ -53,7 +53,6 @@ router.post(
     if (!errors.isEmpty()) {
       return res.status(400).json({ errors: errors.array() });
     }
-    console.log('req', req);
     return req;
     const { image, plantNameResult, plantNameCorrection } = req.body;
     const newFeedback = new Feedback({
