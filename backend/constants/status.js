@@ -1,0 +1,8 @@
+const RESPONSE_STATUS = {
+  BAD_REQUEST: 400,
+  INVALID_URL: 404,
+  SERVER_ERROR: 500,
+  SUCCESS: 200,
+};
+
+module.exports = RESPONSE_STATUS;

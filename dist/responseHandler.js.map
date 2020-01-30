@@ -1,0 +1,1 @@
+{"version":3,"file":"responseHandler.js","sourceRoot":"","sources":["../backend/responseHandler.ts"],"names":[],"mappings":"AAAA,MAAM,YAAY,GAAG,CAAC,OAAO,EAAE,QAAQ,GAAG,KAAK,EAAE,EAAE;IACjD,OAAO,EAAE,OAAO,EAAE,QAAQ,EAAC,CAAC;AAC9B,CAAC,CAAC;AAEF,MAAM,CAAC,OAAO,GAAG;IACf,YAAY;CACb,CAAC"}

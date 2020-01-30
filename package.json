@@ -1,0 +1,29 @@
+{
+  "name": "herbbase",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "dev": "concurrently \"npm run server\" \"cd frontend\" \"ng serve -o\" "
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@ng-bootstrap/ng-bootstrap": "^5.2.1",
+    "bcryptjs": "^2.4.3",
+    "config": "^3.2.4",
+    "express": "^4.17.1",
+    "express-validator": "^6.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.7.12",
+    "nodemon": "^1.19.4"
+  },
+  "devDependencies": {
+    "concurrently": "^5.0.0",
+    "tslint": "^5.20.1",
+    "typescript": "^3.7.2"
+  }
+}
