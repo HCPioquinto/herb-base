@@ -47,7 +47,6 @@ router.post(
     // check("plantNameCorrection", "plantNameCorrection is Required")
     //   .not()
     //   .isEmpty(),
-    GeneralUserAuth
   ],
   async (req, res) => {
     const errors = validationResult(req);
