@@ -5,8 +5,7 @@
   "main": "dist/index.js",
   "scripts": {
     "start": "node index.js",
-    "server": "nodemon index.js",
-    "dev": "concurrently \"npm run server\" \"cd frontend\" \"ng serve -o\" "
+    "server": "nodemon index.js"
   },
   "keywords": [],
   "author": "",
