@@ -1,0 +1,48 @@
+<div class="table-container" id="generic-table">
+  <table class="table">
+    <thead>
+      <th *ngFor="let header of tableHeaders">
+        {{ header }}
+      </th>
+      <th class="actions-col" *ngIf="isShowActions">Actions</th>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let rowData of tableData">
+        <ng-container
+          *ngFor="let data of rowData | keyvalue"
+          (click)="onRowClick(rowData.Key)"
+        >
+          <td *ngIf="keyExemptionChecker(data.key)">
+            <p *ngIf="data.key !== 'Image'">{{ data.value }}</p>
+            <img
+              class="generic-image"
+              *ngIf="data.key === 'Image'"
+              src="{{ data.value }}"
+            />
+          </td>
+        </ng-container>
+        <td *ngIf="isShowActions">
+          <i
+            (click)="onCheckClick(rowData.Key)"
+            *ngIf="showActions.check"
+            class="material-icons check"
+            >check_circle</i
+          >
+          <i
+            (click)="onTrashClick(rowData.Key)"
+            *ngIf="showActions.trash"
+            class="material-icons delete"
+            >delete</i
+          >
+          <i
+            (click)="onArchiveClick(rowData.Key)"
+            *ngIf="showActions.archive"
+            class="material-icons archive"
+            >archive</i
+          >
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

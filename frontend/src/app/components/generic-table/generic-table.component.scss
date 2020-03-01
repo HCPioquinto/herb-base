@@ -1,0 +1,29 @@
+.table-container {
+  &#generic-table {
+    overflow: hidden;
+  }
+
+  .actions-col {
+    width: 145px;
+  }
+
+  .generic-image {
+    width: auto;
+    height: 100px;
+  }
+
+  .material-icons {
+    font-size: 40px;
+    cursor: pointer;
+
+    &.check {
+      color: var(--green);
+    }
+    &.delete {
+      color: red;
+    }
+    &.archive {
+      color: blue;
+    }
+  }
+}
