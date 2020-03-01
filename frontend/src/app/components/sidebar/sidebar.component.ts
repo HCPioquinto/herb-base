@@ -12,7 +12,6 @@ export const ROUTES: RouteInfo[] = [
     { path: '/feedback', title: 'Feedback List',  icon: 'feedback', class: '' },
     { path: '/archive', title: 'Archives',  icon: 'archive', class: '' },
     { path: '/requests', title: 'Training Requests',  icon: 'library_add', class: '' },
-    { path: '/table-list', title: 'Table List',  icon:'content_paste', class: '' },
 ];
 
 @Component({

@@ -11,7 +11,7 @@ const FeedbackSchema = mongoose.Schema({
     required: true
   },
   PlantNameResult: {
-    type: "Number",
+    type: "String",
     required: true
   },
   PlantNameCorrection: {

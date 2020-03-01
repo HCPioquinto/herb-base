@@ -1,18 +1,11 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { NgModule } from "@angular/core";
+import { CommonModule } from "@angular/common";
 
-import { FeedbackTableComponent } from './feedback-table/feedback-table.component';
-import { FeedbackItemComponent } from './feedback-table/feedback-item/feedback-item.component';
-import { FeedbackComponent } from './feedback.component';
+import { FeedbackComponent  } from "./feedback.component";
+import { ComponentsModule } from "../components/components.module";
 
 @NgModule({
-  declarations: [
-    FeedbackTableComponent,
-    FeedbackItemComponent,
-    FeedbackComponent,
-  ],
-  imports: [
-    CommonModule,
-  ]
+  declarations: [FeedbackComponent, ],
+  imports: [CommonModule, ComponentsModule],
 })
-export class FeedbackModule { }
+export class FeedbackModule {}

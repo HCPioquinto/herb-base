@@ -12,6 +12,7 @@ import { MapsComponent } from '../../maps/maps.component';
 import { NotificationsComponent } from '../../notifications/notifications.component';
 import { UpgradeComponent } from '../../upgrade/upgrade.component';
 import { FeedbackModule } from '../../feedback/feedback.module';
+import { ArchiveModule } from '../../archive/archive.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import {
@@ -36,6 +37,7 @@ import {
     MatSelectModule,
     MatTooltipModule,
     FeedbackModule,
+    ArchiveModule,
   ],
   declarations: [
     DashboardComponent,

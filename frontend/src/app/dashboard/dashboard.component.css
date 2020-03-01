@@ -1,0 +1,14 @@
+.logo-container {
+  justify-content:  center;
+  text-align: center;
+}
+
+.main-logo {
+  height: 300px;
+  width: auto;
+}
+
+.logo-text {
+  margin-top: 10px;
+  font-size: 3em;
+}

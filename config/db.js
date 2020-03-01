@@ -1,6 +1,20 @@
 const mongoose = require('mongoose');
 const config = require('config');
 const db = config.get('mongoUri');
+const Grid = require('gridfs-stream');
+
+const InitImageUpload = async () => {
+  const conn = mongoose.createConnection(db, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  });
+  let gfs;
+  await conn.once('open', () => {
+    gfs = Grid(conn.db, mongoose.mongo);
+    gfs.collection('uploads');
+  });
+  return gfs
+}
 
 const connectDb = async () => {
   try {
@@ -10,7 +24,6 @@ const connectDb = async () => {
       useFindAndModify: false,
       useUnifiedTopology: true,
     });
-
     console.log('MongoDB Connected')
   } catch (err) {
     console.error(err.message);
@@ -18,4 +31,7 @@ const connectDb = async () => {
   }
 };
 
-module.exports = connectDb;
+module.exports = {
+  connectDb,
+  InitImageUpload
+};

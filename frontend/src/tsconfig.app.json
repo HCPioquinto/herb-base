@@ -3,10 +3,12 @@
   "compilerOptions": {
     "outDir": "../out-tsc/app",
     "module": "es2015",
-    "baseUrl": "src/app",
+    "baseUrl": "src",
     "types": [],
     "paths": {
-      "Services": ["services/*"] 
+      "@app": ["app/*"],
+      "@services": ["app/services/*"],
+      "@models": ["app/models/*"]
     }
   },
   "exclude": [
