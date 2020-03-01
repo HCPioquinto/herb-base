@@ -1,8 +1,0 @@
-{
-  "mongoUris": "mongodb+srv://admin:pgzT1ftuW691d7YU@cluster0-b57pl.mongodb.net/test?retryWrites=true&w=majority",
-  "mongoUri": "mongodb+srv://admin:ynFJrRT7jToEDODw@cluster0-b57pl.mongodb.net/test?retryWrites=true&w=majority",
-  "jwtSecret": "{SCoKy0Ionm[U$_0",
-  "AMAZON_BUCKET": "herbbases3",
-  "AMAZON_KEY": "AKIAJC4JQYRW5LIEIK2Q",
-  "AMAZON_SECRET": "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"
-}
