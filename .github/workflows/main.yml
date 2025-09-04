@@ -15,7 +15,7 @@ jobs:
 
       - name: Install Flutter SDK
         run: |
-          git clone https://github.com/flutter/flutter.git --branch 3.29.0 --single-branch $HOME/flutter
+          git clone https://github.com/flutter/flutter.git --branch stable --single-branch $HOME/flutter
           echo "$HOME/flutter/bin" >> $GITHUB_PATH
 
       - name: Verify Flutter Installation
