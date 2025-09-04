@@ -13,7 +13,7 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v4
 
-      - name: Install Flutter 3.29.0
+      - name: Install Flutter and set up path
         run: |
           git clone https://github.com/flutter/flutter.git --branch 3.29 --single-branch $HOME/flutter
           echo "$HOME/flutter/bin" >> $GITHUB_PATH
