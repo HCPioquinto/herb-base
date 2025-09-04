@@ -1,0 +1,20 @@
+name: Build Test
+
+on:
+  push:
+    branches:
+      - master
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Install Flutter 3.29.0
+        run: |
+          git clone https://github.com/flutter/flutter.git --branch 3.29.0 --single-branch $HOME/flutter
+          echo "$HOME/flutter/bin" >> $GITHUB_PATH
+          flutter --version
